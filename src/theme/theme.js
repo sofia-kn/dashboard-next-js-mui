@@ -6,19 +6,17 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-
-
 // Create a theme instance.
 const theme = createTheme({
   components: {
-    MuiButton: {
-      variants: [
-        {
-          props: { variant: "contained", isDisabled: true },
-          style: { color: "green" },
-        },
-      ],
-    },
+    // MuiButton: {
+    //   variants: [
+    //     {
+    //       props: { variant: "contained", isDisabled: true },
+    //       style: { color: "green" },
+    //     },
+    //   ],
+    // },
     MuiCssBaseline: {
       styleOverrides: {
         html: {
@@ -41,43 +39,53 @@ const theme = createTheme({
   },
   palette: {
     mode: "light",
-    primary: {
-      main: "#3a7bfd",
+    primary:{
+     main:'#20AEF3'
     },
-    secondary: {
-      main: "#c058f3",
+    secondary:{
+     main:'#F2C8ED'
+    },
+    error:{
+      main:'#FC003C'
+    },
+    warning: {
+      main: "#FEB95A",
     },
     success: {
-      main: "#57ddff",
+      main: "#A9DFD8",
+    },
+    white: {
+      main: "#FFFFFF",
     },
     gray: {
-      main: "#777a92",
+      main: "#87888C"
     },
     black: {
-      main: "#161722",
+      main: "#171821",
       inputColor: "#25273c",
     },
   },
   typography: {
     fontFamily: "inter400",
-    // h1: {
-    //   fontSize: "3rem",
-    //   fontWeight: "700",
-    // },
-    body1: {
-      fontSize: "2rem",
+    h2: {
+      fontSize: "1.5rem",
+      fontWeight: "600",
+      lineHeight: "1.8rem",
     },
-    body2: {
-      fontSize: "16.2px",
-      fontWeight: "700",
+    h3: {
+      fontSize: "1.2rem",
+      lineHeight: "1.4rem",
+      fontWeight: "500",
+    },
+    body1: {
+      fontSize: "1.1rem",
+      lineHeight: "1.3rem",
+      fontWeight: "500",
     },
     subtitle1: {
-      fontSize: "12.6px",
-      fontWeight: "400",
-    },
-    button: {
-      fontSize: "12.6px",
-      fontWeight: "400",
+      fontSize: "1rem",
+      fontWeight: "500",
+      lineHeight: "1.2rem",
     },
   },
 });
