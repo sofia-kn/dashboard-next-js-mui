@@ -9,14 +9,6 @@ const inter = Inter({
 // Create a theme instance.
 const theme = createTheme({
   components: {
-    // MuiButton: {
-    //   variants: [
-    //     {
-    //       props: { variant: "contained", isDisabled: true },
-    //       style: { color: "green" },
-    //     },
-    //   ],
-    // },
     MuiCssBaseline: {
       styleOverrides: {
         html: {
@@ -24,7 +16,7 @@ const theme = createTheme({
         },
         body: {
           color: "#000",
-          backgroundColor: "red",
+          margin:'1.5rem'
         },
 
         "@font-face": {
@@ -62,7 +54,6 @@ const theme = createTheme({
     },
     black: {
       main: "#171821",
-      inputColor: "#25273c",
     },
   },
   typography: {
