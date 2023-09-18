@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import Box from '@mui/material/Box'
 
 function Level() {
   return (
-    <div>Level</div>
+    <Box>Level</Box>
   )
 }
 

@@ -16,7 +16,7 @@ const theme = createTheme({
         },
         body: {
           color: "#000",
-          margin:'1.5rem'
+       
         },
 
         "@font-face": {
