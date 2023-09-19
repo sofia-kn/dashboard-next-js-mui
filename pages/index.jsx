@@ -14,11 +14,10 @@ export async function getStaticProps() {
 export default function Home({ salesCard }) {
   return (
     <>
-
       <Box display="flex">
         <Menu />
 
-        <Container maxWidth="lg" sx={{mt:'2.3rem'}}>
+        <Container maxWidth="lg" sx={{ mt: "2.3rem" }}>
           <Grid container spacing={3}>
             <Grid item md={7.8}>
               <Paper
@@ -29,8 +28,9 @@ export default function Home({ salesCard }) {
                   height: "20rem",
                 }}
               >
+             
+                <Typography variant="h2">Today's sales</Typography>
                 <Typography variant="subtitle1" mb="2rem">
-                  <Typography variant="h2">Today's sales</Typography>
                   summary sales
                 </Typography>
                 <Box
@@ -67,6 +67,5 @@ export default function Home({ salesCard }) {
         </Container>
       </Box>
     </>
-   
   );
 }
