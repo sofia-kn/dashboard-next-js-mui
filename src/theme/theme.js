@@ -16,7 +16,6 @@ const theme = createTheme({
         },
         body: {
           color: "#000",
-       
         },
 
         "@font-face": {
@@ -31,14 +30,14 @@ const theme = createTheme({
   },
   palette: {
     mode: "light",
-    primary:{
-     main:'#20AEF3'
+    primary: {
+      main: "#20AEF3",
     },
-    secondary:{
-     main:'#F2C8ED'
+    secondary: {
+      main: "#F2C8ED",
     },
-    error:{
-      main:'#FC003C'
+    error: {
+      main: "#FC003C",
     },
     warning: {
       main: "#FEB95A",
@@ -50,7 +49,7 @@ const theme = createTheme({
       main: "#FFFFFF",
     },
     gray: {
-      main: "#87888C"
+      main: "#87888C",
     },
     black: {
       main: "#171821",
@@ -69,7 +68,7 @@ const theme = createTheme({
       fontWeight: "500",
     },
     body1: {
-      fontSize: "1.1rem",
+      fontSize: "1.6rem",
       lineHeight: "1.3rem",
       fontWeight: "500",
     },

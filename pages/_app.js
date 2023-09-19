@@ -8,15 +8,13 @@ import { ThemeProvider } from "@mui/material/styles";
 //   subsets: ["latin"],
 // });
 
-
 function MyApp({ Component, pageProps }) {
   return (
-      
     <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Component {...pageProps} />
-    </ThemeProvider>
-    
+        <Component {...pageProps}/>
+      </ThemeProvider>
+  
   );
 }
 
