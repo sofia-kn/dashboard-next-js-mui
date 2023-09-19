@@ -16,7 +16,7 @@ function Cardbox({icon,
       }}
     >
       <CardContent >
-        <Image src={icon} alt="icon" />
+        <Image src={icon} alt="icon"  width={26} height={26}/>
         <Typography variant="h2" mb='0.5rem'>{count}</Typography>
         <Typography variant="subtitle1">{title}</Typography>
         <Typography variant="subtitle1" width='100%' maxWidth='100%'>{precent}</Typography>

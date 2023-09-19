@@ -23,7 +23,7 @@ function Menu() {
   return (
     <Paper sx={{ height: "100vh" }}>
       <Box m={2}>
-        <Image src="/images/Dots .png" alt="Dots icon" />
+        <Image src="/images/Dots .png" alt="Dots icon" width={38} height={10}/>
       </Box>
       <List component="nav">
         <ListItemButton sx={{ mb: "1.2rem", color: "gray.main" }}>

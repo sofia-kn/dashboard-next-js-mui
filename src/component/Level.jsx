@@ -1,13 +1,9 @@
-import React from "react";
-import BarChart from "@mui/x-charts/BarChart";
-
+import React from 'react';
+import Box from '@mui/material/Box'
 function Level() {
   return (
-    <>
-    <BarChart/>
-    
-    </>
-  );
+    <Box>Level</Box>
+  )
 }
 
-export default Level;
+export default Level
