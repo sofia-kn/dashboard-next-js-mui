@@ -25,7 +25,7 @@ export default function Home({ salesCard }) {
                   p: 2,
                   display: "flex",
                   flexDirection: "column",
-                  height: "20rem",
+                  minHeight: "20rem",
                 }}
               >
              
@@ -57,7 +57,7 @@ export default function Home({ salesCard }) {
                   p: 2,
                   display: "flex",
                   flexDirection: "column",
-                  height: "20rem",
+                  minHeight: "20rem",
                   position:'relative',
                   
                 }}
