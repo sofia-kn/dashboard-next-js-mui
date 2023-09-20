@@ -42,6 +42,9 @@ const theme = createTheme({
     warning: {
       main: "#FEB95A",
     },
+    orange:{
+    main:'#FCB859'
+    },
     success: {
       main: "#A9DFD8",
     },
@@ -77,6 +80,11 @@ const theme = createTheme({
       fontWeight: "500",
       lineHeight: "1.2rem",
     },
+    subtitle2:{
+      fontSize:'1.3rem',
+      fontWeight: "500",
+      lineHeight: "1.57rem",
+    }
   },
 });
 
