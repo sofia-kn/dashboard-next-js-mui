@@ -58,6 +58,8 @@ export default function Home({ salesCard }) {
                   display: "flex",
                   flexDirection: "column",
                   height: "20rem",
+                  position:'relative',
+                  
                 }}
               >
                 <Level />
