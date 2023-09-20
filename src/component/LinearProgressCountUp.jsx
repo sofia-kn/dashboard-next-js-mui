@@ -1,39 +1,27 @@
-import React from 'react';
-import LinearProgress from '@mui/material/LinearProgress';
-import Typography from '@mui/material/Typography';
-import { useCountUp } from 'use-count-up';
-import {products} from '../data/data';
+import * as React from 'react';
+import Stack from '@mui/joy/Stack';
+import LinearProgress from '@mui/mater/LinearProgress';
 
-export default function LinearProgressCountUp() {
-  const { value } = useCountUp({
-    isCounting: true,
-    duration: 2,
-    easing: 'linear',
-    start: 0,
-    end: 75 ,
-    onComplete: () => ({
-      shouldRepeat: false,
-      delay:2,
-    }),
-  });
-  
+export default function LinearProgressDeterminate() {
+  const [progress, setProgress] = React.useState(0);
+
+  React.useEffect(() => {
+    const timer = setInterval(() => {
+      setProgress((prevProgress) => (prevProgress >= 100 ? 0 : prevProgress + 10));
+    }, 800);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
   return (
-   
-    <LinearProgress
-    
-    variant='determinate'
-    value={Number(value)}
-    >
-     <Typography
-        level="body-xs"
-        fontWeight="xl"
-        textColor="common.white"
-        sx={{ mixBlendMode: 'difference' }}
-      >
-        {/* LOADING… {`${Math.round(Number(value))}%`} */}
-      </Typography>
-   </LinearProgress>
-  
- 
+    <Stack spacing={2} sx={{ flex: 1 }}>
+      <LinearProgress determinate value={25} />
+      <LinearProgress determinate value={50} />
+      <LinearProgress determinate value={75} />
+      <LinearProgress determinate value={100} />
+      <LinearProgress determinate value={progress} />
+    </Stack>
   );
 }
