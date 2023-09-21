@@ -102,7 +102,7 @@ function Products() {
                 >
                   <Typography
                     variant="subtitle1"
-                    color="orange.main"
+                    color="success.main"
                     sx={{ display: "flex", justifyContent: "center" }}
                   >
                     {product.sales}
