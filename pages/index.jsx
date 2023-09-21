@@ -16,11 +16,11 @@ export async function getStaticProps() {
 export default function Home({ salesCard }) {
   return (
     <>
-      <Box display="flex">
+      <Box display="flex" >
         <Menu />
 
         <Container maxWidth="lg" sx={{ mt: "2.3rem" }}>
-          <Grid container spacing={3}>
+          <Grid container spacing={3} justifyContent='center' alignItems='center'>
             <Grid item md={7.8}>
               <Paper
                 sx={{
@@ -81,7 +81,7 @@ export default function Home({ salesCard }) {
               
               </Paper>
             </Grid>
-            <Grid item sm={4} md={4} width="23.8rem">
+            <Grid item sm={4} md={4} >
               <Paper
                 sx={{
                   p: 2,

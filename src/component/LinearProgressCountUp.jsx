@@ -16,7 +16,7 @@ export default function LinearProgressCountUp({ sales, color }) {
   });
   return (
     <>
-    {console.log(color)}
+  
       <LinearProgress
         variant="determinate"
         value={value}
