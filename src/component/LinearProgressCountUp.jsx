@@ -19,23 +19,13 @@ export default function LinearProgressCountUp() {
   });
 
   return (
-    
-  
-   <LinearProgress
-   
-    variant='determinate'
-    value={Number(value)}
-   >
-     <Typography
-        level="body-xs"
-        fontWeight="xl"
-        textColor="common.white"
-        sx={{ mixBlendMode: 'difference' }}
-      >
-        LOADING… {`${Math.round(Number(value))}%`}
-      </Typography>
-   </LinearProgress>
-  
- 
+    <>
+      <LinearProgress
+        variant="determinate"
+        value={value}
+        color={color}
+        sx={{borderRadius:'0.3rem '}}
+      ></LinearProgress>
+    </>
   );
 }

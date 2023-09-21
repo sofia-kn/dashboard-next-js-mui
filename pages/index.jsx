@@ -6,6 +6,7 @@ import Level from "../src/component/Level";
 import Products from "../src/component/Products";
 import Menu from "../src/component/Menu";
 import { Container, Grid, Paper } from "@mui/material";
+import Customer from "../src/component/Customer";
 
 export async function getStaticProps() {
   return {
@@ -80,6 +81,20 @@ export default function Home({ salesCard }) {
               
               </Paper>
             </Grid>
+            <Grid item sm={4} md={4} width="23.8rem">
+              <Paper
+                sx={{
+                  p: 2,
+                  display: "flex",
+                  flexDirection: "column",
+                  minHeight: "22.8rem",
+                  position: "relative",
+                }}
+              >
+                <Customer/>
+              </Paper>
+            </Grid>
+            
           </Grid>
         </Container>
       </Box>

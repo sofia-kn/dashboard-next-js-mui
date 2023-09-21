@@ -18,10 +18,11 @@ import StarBorderPurple500OutlinedIcon from "@mui/icons-material/StarBorderPurpl
 import HistoryOutlinedIcon from "@mui/icons-material/HistoryOutlined";
 import ExitToAppOutlinedIcon from "@mui/icons-material/ExitToAppOutlined";
 import Image from 'next/image'
+import { display } from "@mui/system";
 
 function Menu() {
   return (
-    <Paper sx={{ height: "100vh" }}>
+    <Paper sx={{ height: "100vh", display:{xs:'none', lg:'block'} }}>
       <Box m={2}>
         <Image src="/images/Dots .png" alt="Dots icon" width={38} height={10}/>
       </Box>
