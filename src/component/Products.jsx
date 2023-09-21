@@ -9,48 +9,10 @@ import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import { products } from "../data/data";
 import Box from "@mui/system/Box";
-// import LinearProgressCountUp from "./LinearProgressCountUp";
-// import Stack from "@mui/joy/Stack";
-import LinearProgress from "@mui/material/LinearProgress";
-
-// export default function LinearProgressDeterminate() {
-//   const [progress, setProgress] = React.useState(0);
-
-//   React.useEffect(() => {
-//     const timer = setInterval(() => {
-//       setProgress((prevProgress) => (prevProgress >= 100 ? 0 : prevProgress + 10));
-//     }, 800);
-
-//     return () => {
-//       clearInterval(timer);
-//     };
-//   }, []);
-
-//   return (
-//     <Stack spacing={2} sx={{ flex: 1 }}>
-//       <LinearProgress determinate value={25} />
-//       <LinearProgress determinate value={50} />
-//       <LinearProgress determinate value={75} />
-//       <LinearProgress determinate value={100} />
-//       <LinearProgress determinate value={progress} />
-//     </Stack>
-//   );
-// }
+import CountUp from "react-countup";
+import LinearProgressCountUp from "../component/LinearProgressCountUp";
 
 function Products() {
-  const [progress, setProgress] = React.useState(0);
-
-  React.useEffect(() => {
-    const timer = setInterval(() => {
-      setProgress((prevProgress) =>
-        prevProgress >= 100 ? 0 : prevProgress + 10
-      );
-    }, 800);
-    return () => {
-      clearInterval(timer);
-    };
-  }, []);
-
   return (
     <TableContainer container={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
@@ -91,7 +53,7 @@ function Products() {
                 <Typography variant="subtitle1">{product.name}</Typography>
               </TableCell>
               <TableCell>
-                <LinearProgress determinate value={75}/>
+              <LinearProgressCountUp sales={product.sales} color={product.color}/>
               </TableCell>
               <TableCell>
                 <Box
@@ -102,10 +64,11 @@ function Products() {
                 >
                   <Typography
                     variant="subtitle1"
-                    color="success.main"
+                    color={product.color}
                     sx={{ display: "flex", justifyContent: "center" }}
                   >
-                    {product.sales}
+                    <CountUp start={0} end={product.sales} duration={4}/>
+                    %
                   </Typography>
                 </Box>
               </TableCell>

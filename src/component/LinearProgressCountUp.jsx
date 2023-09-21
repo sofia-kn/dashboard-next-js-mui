@@ -1,25 +1,22 @@
-import React from 'react';
-import LinearProgress from '@mui/material/LinearProgress';
-import Typography from '@mui/material/Typography';
-import { useCountUp } from 'use-count-up';
-import {products, Products} from '../data/data';
+import React from "react";
+import LinearProgress from "@mui/material/LinearProgress";
+import { useCountUp } from "use-count-up";
 
-
-export default function LinearProgressCountUp() {
+export default function LinearProgressCountUp({ sales, color }) {
   const { value } = useCountUp({
     isCounting: true,
     duration: 2,
-    easing: 'linear',
+    easing: "linear",
     start: 0,
-    end: 75,
+    end: sales,
     onComplete: () => ({
       shouldRepeat: false,
       delay: 2,
     }),
   });
-
   return (
     <>
+    {console.log(color)}
       <LinearProgress
         variant="determinate"
         value={value}
