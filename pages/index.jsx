@@ -34,7 +34,7 @@ export default function Home({ salesCard }) {
                   p: 2,
                   display: "flex",
                   flexDirection: "column",
-                  height: "20rem",
+                  minHeight: "20rem",
                 }}
               >
                 <Typography variant="h2">Today's sales</Typography>

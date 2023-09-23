@@ -10,16 +10,15 @@ function Cardbox({icon,
   return (
     <Card
       sx={{
-        height: "10.7rem",
         bgcolor: "black.main",
         color: "white.main",               
       }}
     >
-      <CardContent >
-        <Image src={icon} alt="icon"  width={26} height={26}/>
-        <Typography variant="h2" mb='0.5rem'>{count}</Typography>
-        <Typography variant="subtitle1">{title}</Typography>
-        <Typography variant="subtitle1" width='100%' maxWidth='100%'>{precent}</Typography>
+      <CardContent sx={{p:'10px 11px 9px 12px'}}>
+        <Image src={icon} alt="icon" width={26} height={26}/>
+        <Typography variant="h2" m='1.2rem 0.5rem'>{count}</Typography>
+        <Typography variant="subtitle1" mb='0.5rem'>{title}</Typography>
+        <Typography variant="subtitle1" pb='0'>{precent}</Typography>
       </CardContent>
     </Card>
   );
