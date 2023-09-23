@@ -8,6 +8,7 @@ import Menu from "../src/component/Menu";
 import { Container, Grid, Paper } from "@mui/material";
 import Customer from "../src/component/Customer";
 import Earnings from "../src/component/Earnings";
+import Insights from "../src/component/Insights";
 
 export async function getStaticProps() {
   return {
@@ -131,7 +132,7 @@ export default function Home({ salesCard }) {
                   minWidth: "23.8rem",
                 }}
               >
-                <Customer />
+                <Insights />
               </Paper>
             </Grid>
           </Grid>
