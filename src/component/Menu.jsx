@@ -18,7 +18,6 @@ import StarBorderPurple500OutlinedIcon from "@mui/icons-material/StarBorderPurpl
 import HistoryOutlinedIcon from "@mui/icons-material/HistoryOutlined";
 import ExitToAppOutlinedIcon from "@mui/icons-material/ExitToAppOutlined";
 import Image from 'next/image'
-import { display } from "@mui/system";
 
 function Menu() {
   return (

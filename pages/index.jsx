@@ -84,14 +84,20 @@ export default function Home({ salesCard }) {
             <Grid item sm={4} md={4} >
               <Paper
                 sx={{
-                  p: 2,
+                  p: '20px',
                   display: "flex",
                   flexDirection: "column",
-                  minHeight: "22.8rem",
-                  position: "relative",
+                  justifyContent:'center',
+                  alignItems:'center',
+                  height: "33.5rem",
+                  position:'relative',
+                  minWidth:'24rem',
+                 
+                  
+                
                 }}
               >
-                <Customer/>
+                <Customer />
               </Paper>
             </Grid>
             

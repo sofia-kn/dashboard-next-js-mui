@@ -53,6 +53,7 @@ const theme = createTheme({
     },
     gray: {
       main: "#87888C",
+      light:'#A0A0A0'
     },
     black: {
       main: "#171821",

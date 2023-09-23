@@ -36,4 +36,5 @@ const products = [
   { id: '04', name: "Apple Smartwatch", popularity: "12", sales: 29, color:'secondary' },
 ];
 
+
 export { salesCard, products };
