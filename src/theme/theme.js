@@ -85,6 +85,11 @@ const theme = createTheme({
       fontSize:'1.3rem',
       fontWeight: "500",
       lineHeight: "1.57rem",
+    },
+    price:{
+      fontSize:'2rem',
+      fontWeight:'700',
+      lineHeight:'2.4rem'
     }
   },
 });

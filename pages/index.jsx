@@ -7,6 +7,7 @@ import Products from "../src/component/Products";
 import Menu from "../src/component/Menu";
 import { Container, Grid, Paper } from "@mui/material";
 import Customer from "../src/component/Customer";
+import Earnings from "../src/component/Earnings";
 
 export async function getStaticProps() {
   return {
@@ -16,18 +17,23 @@ export async function getStaticProps() {
 export default function Home({ salesCard }) {
   return (
     <>
-      <Box display="flex" >
+      <Box display="flex">
         <Menu />
 
-        <Container maxWidth="lg" sx={{ mt: "2.3rem" }}>
-          <Grid container spacing={3} justifyContent='center' alignItems='center'>
+        <Container maxWidth="lg" >
+          <Grid
+            container
+            spacing={2}
+            justifyContent="center"
+            alignItems="center"
+          >
             <Grid item md={7.8}>
               <Paper
                 sx={{
                   p: 2,
                   display: "flex",
                   flexDirection: "column",
-                  minHeight: "20rem",
+                  height: "20rem",
                 }}
               >
                 <Typography variant="h2">Today's sales</Typography>
@@ -58,7 +64,7 @@ export default function Home({ salesCard }) {
                   p: 2,
                   display: "flex",
                   flexDirection: "column",
-                  minHeight: "20rem",
+                  height: "20rem",
                   position: "relative",
                 }}
               >
@@ -78,29 +84,56 @@ export default function Home({ salesCard }) {
                   Top Products
                 </Typography>
                 <Products />
-              
               </Paper>
             </Grid>
-            <Grid item sm={4} md={4} >
+            <Grid item sm={4} md={4}>
               <Paper
                 sx={{
-                  p: '2rem',
+                  p: "2rem",
                   display: "flex",
                   flexDirection: "column",
-                  justifyContent:'center',
-                  alignItems:'center',
+                  justifyContent: "center",
+                  alignItems: "center",
                   height: "22.8rem",
-                  position:'relative',
-                  minWidth:'24rem',
-                 
-                  
-                
+                  position: "relative",
+                  minWidth: "24rem",
                 }}
               >
                 <Customer />
               </Paper>
             </Grid>
-            
+            <Grid item md={4}>
+              <Paper
+                sx={{
+                  p: "2rem",
+                  display: "flex",
+                  flexDirection: "column",
+                  // justifyContent: "center",
+                  // alignItems: "center",
+                  height: "24.7rem",
+                  position: "relative",
+                  minWidth: "23.8rem",
+                }}
+              >
+                <Earnings />
+              </Paper>
+            </Grid>
+            <Grid item md={7.8}>
+              <Paper
+                sx={{
+                  p: "2rem",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  height: "24.7rem",
+                  position: "relative",
+                  minWidth: "23.8rem",
+                }}
+              >
+                <Customer />
+              </Paper>
+            </Grid>
           </Grid>
         </Container>
       </Box>
