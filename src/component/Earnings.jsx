@@ -16,7 +16,7 @@ function Earnings() {
         Profit is 48% More than last Month
       </Typography>
       <Box display="flex" justifyContent="center" mt={3} position='relative'>
-        <Image src="/images/Percentage meter.png" width={174} height={150} />
+        <Image src="/images/Percentage meter.png" width={174} height={150} alt='image'/>
         <Typography position='absolute' top={60} fontSize='2.5rem' fontWeight='700'>80%</Typography>
       </Box>
     </Box>

@@ -1,10 +1,10 @@
 import { createTheme } from "@mui/material/styles";
 // import fontSemiBold from "../../public/fonts/Inter-SemiBold.woff";
-import { Inter } from "next/font/google";
-const inter = Inter({
-  weight: "800",
-  subsets: ["latin"],
-});
+// import { Inter } from "next/font/google";
+// const inter = Inter({
+//   weight: "800",
+//   subsets: ["latin"],
+// });
 
 // Create a theme instance.
 const theme = createTheme({
@@ -18,18 +18,18 @@ const theme = createTheme({
           color: "#000",
         },
 
-        "@font-face": {
-          fontFamily: "inter400",
-          fontStyle: "normal",
-          fontWeight: 800,
-          src: inter,
-          fontDisplay: "swap",
-        },
+        // "@font-face": {
+        //   fontFamily: "SemiBold",
+        //   fontStyle: "normal",
+        //   fontWeight: 800,
+        //   src:'../../public/fonts/Inter-SemiBold.woff',
+        //   fontDisplay: "swap",
+        // },
       },
     },
   },
   palette: {
-    mode: "light",
+    mode: "dark",
     primary: {
       main: "#20AEF3",
     },
@@ -60,7 +60,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "inter400",
+    // fontFamily: "SemiBold",
     h2: {
       fontSize: "1.5rem",
       fontWeight: "600",
