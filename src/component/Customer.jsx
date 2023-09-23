@@ -6,7 +6,7 @@ import Divider from "@mui/material/Divider";
 
 function Customer() {
   return (
-    <Box  p={4}>
+    <Box>
       <Box>
         <Typography>Customer Fulfilment</Typography>
       </Box>

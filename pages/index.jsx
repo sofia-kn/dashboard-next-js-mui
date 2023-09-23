@@ -71,7 +71,7 @@ export default function Home({ salesCard }) {
                   p: 2,
                   display: "flex",
                   flexDirection: "column",
-                  minHeight: "22.8rem",
+                  height: "22.8rem",
                 }}
               >
                 <Typography variant="h2" mb="1.9rem">
@@ -84,12 +84,12 @@ export default function Home({ salesCard }) {
             <Grid item sm={4} md={4} >
               <Paper
                 sx={{
-                  p: '20px',
+                  p: '2rem',
                   display: "flex",
                   flexDirection: "column",
                   justifyContent:'center',
                   alignItems:'center',
-                  height: "33.5rem",
+                  height: "22.8rem",
                   position:'relative',
                   minWidth:'24rem',
                  
