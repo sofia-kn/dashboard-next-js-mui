@@ -1,68 +1,73 @@
-import { useEffect, useState } from "react";
-import { Bar } from "react-chartjs-2";
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend,
-} from "chart.js";
+import React, { PureComponent } from 'react';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
-// import faker from "faker";
+const data = [
+  {
+    name: 'Page A',
+    pv: 2400,
+    amt: 2400,
+  },
+  {
+    name: 'Page B',
 
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend
-);
+    pv: 1398,
+    amt: 2210,
+  },
+  {
+    name: 'Page C',
+    pv: 9800,
+    amt: 2290,
+  },
+  {
+    name: 'Page D',
 
-function Level() {
-  const [chartData, setChartData] = useState({ datasets: [] });
-  const [chartOptions, setChartoptions] = useState({});
+    pv: 3908,
+    amt: 2000,
+  },
+  {
+    name: 'Page E',
 
-  useEffect(() => {
-    setChartData({
-      labels: ["volume", "services"],
-      datasets: [
-        {
-          // label: 'My First Dataset',
-          data: [65, 59, 80, 81, 56, 55, 40],
-          backgroundColor: "#A9DFD8",
-          borderColor: [
-            
-          ],
-          borderWidth: 1,
-        },
-      ],
-    });
-    setChartoptions({
-      plugins: {
-        legend: {
-          position: "top",
-        },
-      },
-      maintainAspectRatio: false,
-      responsive: true,
-    });
-  }, []);
+    pv: 4800,
+    amt: 2181,
+  },
+  {
+    name: 'Page F',
+    pv: 3800,
+    amt: 2500,
+  },
+  {
+    name: 'Page G',
+    pv: 4300,
+    amt: 2100,
+  },
+];
 
-  return (
-    <>
-      <Bar data={chartData} options={chartOptions} />
-      {/* <BarChart
-      xAxis={[{ scaleType: 'band', data: ['volume', 'services'] }]}
-      series={[{ data: [4, 3, 5] }, { data: [1, 6, 3] }, { data: [2, 5, 6] }]}
-     height={500}
-     width={600}
-      
-    /> */}
-    </>
-  );
+export default class Example extends PureComponent {
+
+  render() {
+    return (
+      <ResponsiveContainer width="100%" height="100%">
+        <BarChart
+          width={500}
+          height={300}
+          data={data}
+          margin={{
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+          
+        >
+          <CartesianGrid  opacity={0} />
+          <XAxis padding={{ left: 20, right: 20 }}/>
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Bar dataKey="pv" fill="#A9DFD8" background={{ fill: '#2B2B36' }} />
+          {/* <Bar dataKey="uv" fill="#82ca9d" /> */}
+        </BarChart>
+      </ResponsiveContainer>
+    );
+  }
 }
-
-export default Level;
