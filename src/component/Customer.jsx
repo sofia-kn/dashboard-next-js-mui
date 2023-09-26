@@ -6,19 +6,20 @@ import Divider from "@mui/material/Divider";
 
 function Customer() {
   return (
-    <Box>
-      <Box>
+    <>
+      <Box p={2}>
         <Typography>Customer Fulfilment</Typography>
       </Box>
-      <Box>
+      <Box display='flex' justifyContent='center'>
         <Image src="/images/Graph.png" width={214} height={106} alt="graph" />
       </Box>
-      <Divider orientation="horizontal" variant="fullWidth" flexItem/>
+      <Divider orientation="horizontal" variant="fullWidth" flexItem />
       <Box
         // p="1.4rem"
         mt="1.4rem"
+        // mb="2rem"
         display="flex"
-        justifyContent="space-evenly"
+        justifyContent="center"
         alignItems="center"
       >
         <Box>
@@ -38,7 +39,7 @@ function Customer() {
           </Typography>
         </Box>
 
-        <Divider orientation="vertical" variant="inset" flexItem sx={{ml:'0px'}}/>
+        <Divider orientation="vertical" variant="inset" flexItem sx={{m:'0 rem'}} />
 
         <Box>
           <Box display="flex" alignItems="center">
@@ -57,7 +58,7 @@ function Customer() {
           </Typography>
         </Box>
       </Box>
-    </Box>
+    </>
   );
 }
 
