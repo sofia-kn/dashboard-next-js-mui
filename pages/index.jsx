@@ -28,12 +28,13 @@ export default function Home({ salesCard }) {
             justifyContent="center"
             alignItems="center"
           >
-            <Grid item md={7.8}>
+            <Grid item sm={12} md={7.8}>
               <Paper
                 sx={{
                   p: "2rem 1.4rem",
                   display: "flex",
                   flexDirection: "column",
+                  flexWrap:'wrap',
                   height:'auto'
                 }}
               >
@@ -61,7 +62,7 @@ export default function Home({ salesCard }) {
                 
               </Paper>
             </Grid>
-            <Grid item sm={4} md={4}>
+            <Grid item xs={9} sm={5.5} md={4}>
               <Paper
                 sx={{
                   display: "flex",
@@ -71,7 +72,7 @@ export default function Home({ salesCard }) {
                 <Level />
               </Paper>
             </Grid>
-            <Grid item md={7.8}>
+            <Grid item sm={12} md={7.8}>
               <Paper
                 sx={{
                   p: 2,
@@ -86,7 +87,7 @@ export default function Home({ salesCard }) {
                 <Products />
               </Paper>
             </Grid>
-            <Grid item sm={4} md={4}>
+            <Grid item xs={8} sm={6} md={4}>
               <Paper
                 sx={{
                   // p: 2,
@@ -102,7 +103,7 @@ export default function Home({ salesCard }) {
                 <Customer />
               </Paper>
             </Grid>
-            <Grid item md={4}>
+            <Grid item xs={8} sm={6} md={4}>
               <Paper
                 sx={{
                   p: "2rem",
@@ -118,7 +119,7 @@ export default function Home({ salesCard }) {
                 <Earnings />
               </Paper>
             </Grid>
-            <Grid item md={7.8}>
+            <Grid item sm={12} md={7.8}>
               <Paper
                 sx={{
                   p: "2rem",
