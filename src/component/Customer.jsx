@@ -15,9 +15,7 @@ function Customer() {
       </Box>
       <Divider orientation="horizontal" variant="fullWidth" flexItem />
       <Box
-        // p="1.4rem"
         mt="1.4rem"
-        // mb="2rem"
         display="flex"
         justifyContent="center"
         alignItems="center"
@@ -39,7 +37,7 @@ function Customer() {
           </Typography>
         </Box>
 
-        <Divider orientation="vertical" variant="inset" flexItem sx={{m:'0 rem'}} />
+        <Divider orientation="vertical" variant="inset" flexItem sx={{m:'0 4rem'}} />
 
         <Box>
           <Box display="flex" alignItems="center">

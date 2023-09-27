@@ -21,7 +21,7 @@ export default function Home({ salesCard }) {
       <Box display="flex">
         <Menu />
 
-        <Container maxWidth="lg" >
+        <Container maxWidth="lg">
           <Grid
             container
             spacing={2}
@@ -31,42 +31,41 @@ export default function Home({ salesCard }) {
             <Grid item md={7.8}>
               <Paper
                 sx={{
-                  p: 2,
+                  p: "2rem 1.4rem",
                   display: "flex",
                   flexDirection: "column",
-                  minHeight: "20rem",
+                  height:'auto'
                 }}
               >
-                <Typography variant="h2">Today's sales</Typography>
-                <Typography variant="subtitle1" mb="2rem">
-                  summary sales
-                </Typography>
-                <Box
-                  display="flex"
-                  flexWrap="wrap"
-                  justifyContent="space-evenly"
-                  gap={1}
-                >
-                  {salesCard.map((item) => (
-                    <Cardbox
-                      key={item.id}
-                      icon={item.icon}
-                      count={item.count}
-                      title={item.title}
-                      precent={item.precent}
-                    />
-                  ))}
-                </Box>
+                
+                  <Typography variant="h2">Today's sales</Typography>
+                  <Typography variant="subtitle1" mb="2rem">
+                    summary sales
+                  </Typography>
+                  <Box
+                    display="flex"
+                    flexWrap="wrap"
+                    justifyContent="space-evenly"
+                    gap={1}
+                  >
+                    {salesCard.map((item) => (
+                      <Cardbox
+                        key={item.id}
+                        icon={item.icon}
+                        count={item.count}
+                        title={item.title}
+                        precent={item.precent}
+                      />
+                    ))}
+                  </Box>
+                
               </Paper>
             </Grid>
-            <Grid item sm={4} md={4} width="23.8rem">
+            <Grid item sm={4} md={4}>
               <Paper
                 sx={{
-                  p: 2,
                   display: "flex",
                   flexDirection: "column",
-                  height: "20rem",
-                  position: "relative",
                 }}
               >
                 <Level />
