@@ -23,7 +23,7 @@ function Products() {
                 #
               </Typography>
             </TableCell>
-            <TableCell>
+            <TableCell >
               <Typography variant="subtitle2" color="gray.main">
                 Name
               </Typography>
