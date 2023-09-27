@@ -119,7 +119,7 @@ export default function Home({ salesCard }) {
                 <Earnings />
               </Paper>
             </Grid>
-            <Grid item sm={12} md={7.8}>
+            <Grid item xs={12} sm={12} md={7.8}>
               <Paper
                 sx={{
                   p: "2rem",
