@@ -54,7 +54,7 @@ const data = [
 export default class Example extends PureComponent {
   render() {
     return (
-      <Box height='20rem' minWidth='23.7rem'>
+      <Box height='19.7rem' minWidth='23.7rem'>
         <Typography variant="h2" m='1.4rem 0 0 1.38rem'>Level</Typography>
         <ResponsiveContainer minWidth="30%" height="65%">
           <BarChart
