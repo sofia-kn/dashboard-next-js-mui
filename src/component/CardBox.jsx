@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "@mui/material/Card";
-import { CardContent, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 
 function Cardbox({ icon, count, title, precent }) {
@@ -14,18 +14,18 @@ function Cardbox({ icon, count, title, precent }) {
         height:'10.7rem'
       }}
     >
-      <CardContent sx={{ p: "11px 13px 8px 14px" }}>
+      <Box sx={{p:'1rem 1.1rem 0.9rem 1.2rem'}} >
         <Image src={icon} alt="icon" width={26} height={26} />
-        <Typography variant="h2" m="1.2rem 0.5rem">
+        <Typography variant="h2" margin='1.2rem 0 0.5rem 0'>
           {count}
         </Typography>
-        <Typography variant="subtitle1" mb="0.5rem">
+        <Typography variant="subtitle1" mb='0.5rem'>
           {title}
         </Typography>
-        <Typography variant="subtitle1" pb="0px">
+        <Typography variant="subtitle1" >
           {precent}
         </Typography>
-      </CardContent>
+      </Box>
     </Card>
   );
 }
