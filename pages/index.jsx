@@ -75,7 +75,7 @@ export default function Home({ salesCard }) {
             <Grid item sm={12} md={7.8}>
               <Paper
                 sx={{
-                  p: 2,
+                  p:'1rem 0 0 1rem',
                   display: "flex",
                   flexDirection: "column",
                   height: "22.8rem",
