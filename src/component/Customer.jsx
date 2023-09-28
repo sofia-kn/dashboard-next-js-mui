@@ -3,15 +3,16 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Image from "next/image";
 import Divider from "@mui/material/Divider";
+import CustomerChart from "./CustomerChart";
 
 function Customer() {
   return (
     <>
-      <Box p={2}>
+      <Box pl='1.4rem'>
         <Typography>Customer Fulfilment</Typography>
       </Box>
-      <Box display='flex' justifyContent='center'>
-        <Image src="/images/Graph.png" width={214} height={106} alt="graph" />
+      <Box minWidth='21.4rem' height='10.6rem' margin='1.4rem 1.3rem'>
+      <CustomerChart/>
       </Box>
       <Divider orientation="horizontal" variant="fullWidth" flexItem />
       <Box

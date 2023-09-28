@@ -90,14 +90,9 @@ export default function Home({ salesCard }) {
             <Grid item xs={8} sm={6} md={4}>
               <Paper
                 sx={{
-                  // p: 2,
-                  // display: "flex",
-                  // flexDirection: "column",
-                  // justifyContent: "center",
-                  // alignItems: "center",
                   height: "22.8rem",
                   position: "relative",
-                  minWidth: "24rem",
+                  p:'1.4rem 0'
                 }}
               >
                 <Customer />
