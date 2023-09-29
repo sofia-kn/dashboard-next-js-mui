@@ -72,7 +72,7 @@ export default function Home({ salesCard }) {
                 <Level />
               </Paper>
             </Grid>
-            <Grid item sm={12} md={7.8}>
+            <Grid item xs={12} sm={12} md={7.8}>
               <Paper
                 sx={{
                   p:'1rem 0 0 1rem',
