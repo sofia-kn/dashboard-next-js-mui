@@ -6,7 +6,7 @@ import Box from "@mui/material/Box";
 
 function Earnings() {
   return (
-    <Box>
+    <Box overflow='hidden'>
       <Typography variant="h2" mb='0.5rem'>Earnings</Typography>
       <Typography variant="subtitle1" color="gray.main" mb='0.9rem'>
         Total Expense

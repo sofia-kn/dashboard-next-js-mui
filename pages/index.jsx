@@ -20,7 +20,7 @@ export default function Home({ salesCard }) {
   return (
     <>
       <Box display="flex">
-        <Menu />
+        <Menu/>
         <Container maxWidth="lg">
           <Grid
             container

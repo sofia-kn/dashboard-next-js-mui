@@ -16,6 +16,7 @@ const theme = createTheme({
         },
         body: {
           color: "#000",
+          
         },
 
         // "@font-face": {
