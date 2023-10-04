@@ -29,7 +29,7 @@ const theme = createTheme({
     },
   },
   palette: {
-    mode: "dark",
+    mode: "light",
     primary: {
       main: "#20AEF3",
     },
@@ -42,8 +42,8 @@ const theme = createTheme({
     warning: {
       main: "#FEB95A",
     },
-    orange:{
-    main:'#FCB859'
+    orange: {
+      main: "#FCB859",
     },
     success: {
       main: "#A9DFD8",
@@ -53,10 +53,13 @@ const theme = createTheme({
     },
     gray: {
       main: "#87888C",
-      light:'#A0A0A0'
+      light: "#A0A0A0",
     },
     black: {
       main: "#171821",
+    },
+    red: {
+      main: "#FC003C",
     },
   },
   typography: {
@@ -81,16 +84,16 @@ const theme = createTheme({
       fontWeight: "500",
       lineHeight: "1.2rem",
     },
-    subtitle2:{
-      fontSize:'1.3rem',
+    subtitle2: {
+      fontSize: "1.3rem",
       fontWeight: "500",
       lineHeight: "1.57rem",
     },
-    price:{
-      fontSize:'2rem',
-      fontWeight:'700',
-      lineHeight:'2.4rem'
-    }
+    price: {
+      fontSize: "2rem",
+      fontWeight: "700",
+      lineHeight: "2.4rem",
+    },
   },
 });
 

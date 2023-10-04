@@ -9,6 +9,7 @@ import { Container, Grid, Paper } from "@mui/material";
 import Customer from "../src/component/Customer";
 import Earnings from "../src/component/Earnings";
 import Insights from "../src/component/Insights";
+import Profile from "../src/component/Profile";
 
 export async function getStaticProps() {
   return {
@@ -20,7 +21,6 @@ export default function Home({ salesCard }) {
     <>
       <Box display="flex">
         <Menu />
-
         <Container maxWidth="lg">
           <Grid
             container
@@ -28,38 +28,43 @@ export default function Home({ salesCard }) {
             justifyContent="center"
             alignItems="center"
           >
+            <Grid item sm={12}
+             textAlign="end"
+             height='5rem'
+             margin='2rem 0 1rem 0'
+             >
+              <Profile/>
+            </Grid>
             <Grid item sm={12} md={7.8}>
               <Paper
                 sx={{
                   p: "2rem 1.4rem",
                   display: "flex",
                   flexDirection: "column",
-                  flexWrap:'wrap',
-                  height:'auto'
+                  flexWrap: "wrap",
+                  height: "auto",
                 }}
               >
-                
-                  <Typography variant="h2">Today's sales</Typography>
-                  <Typography variant="subtitle1" mb="2rem">
-                    summary sales
-                  </Typography>
-                  <Box
-                    display="flex"
-                    flexWrap="wrap"
-                    justifyContent="space-evenly"
-                    gap={1}
-                  >
-                    {salesCard.map((item) => (
-                      <Cardbox
-                        key={item.id}
-                        icon={item.icon}
-                        count={item.count}
-                        title={item.title}
-                        precent={item.precent}
-                      />
-                    ))}
-                  </Box>
-                
+                <Typography variant="h2">Today's sales</Typography>
+                <Typography variant="subtitle1" mb="2rem">
+                  summary sales
+                </Typography>
+                <Box
+                  display="flex"
+                  flexWrap="wrap"
+                  justifyContent="space-evenly"
+                  gap={1}
+                >
+                  {salesCard.map((item) => (
+                    <Cardbox
+                      key={item.id}
+                      icon={item.icon}
+                      count={item.count}
+                      title={item.title}
+                      precent={item.precent}
+                    />
+                  ))}
+                </Box>
               </Paper>
             </Grid>
             <Grid item xs={9} sm={5.5} md={4}>
@@ -75,7 +80,7 @@ export default function Home({ salesCard }) {
             <Grid item xs={12} sm={12} md={7.8}>
               <Paper
                 sx={{
-                  p:'1rem 0 0 1rem',
+                  p: "1rem 0 0 1rem",
                   display: "flex",
                   flexDirection: "column",
                   height: "22.8rem",
@@ -92,7 +97,7 @@ export default function Home({ salesCard }) {
                 sx={{
                   height: "22.8rem",
                   position: "relative",
-                  p:'1.4rem 0'
+                  p: "1.4rem 0",
                 }}
               >
                 <Customer />
