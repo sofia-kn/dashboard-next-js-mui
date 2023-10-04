@@ -21,7 +21,7 @@ import Image from 'next/image'
 
 function Menu() {
   return (
-    <Paper  sx={{height:'100vh' ,display:{xs:'none', lg:'block'} }} >
+    <Paper  sx={{height:'100wh' ,display:{xs:'none', lg:'block'} }} >
       <Box m={2}>
         <Image src="/images/Dots .png" alt="Dots icon" width={38} height={10}/>
       </Box>

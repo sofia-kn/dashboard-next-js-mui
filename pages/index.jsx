@@ -20,7 +20,7 @@ export default function Home({ salesCard }) {
   return (
     <>
       <Box display="flex">
-        <Menu/>
+        <Menu />
         <Container maxWidth="lg">
           <Grid
             container
@@ -28,12 +28,8 @@ export default function Home({ salesCard }) {
             justifyContent="center"
             alignItems="center"
           >
-            <Grid item sm={12}
-             textAlign="end"
-             height='5rem'
-             margin='2rem 0 1rem 0'
-             >
-              <Profile/>
+            <Grid item sm={12} textAlign="end" height="5rem" mt="1.5rem">
+              <Profile />
             </Grid>
             <Grid item sm={12} md={7.8}>
               <Paper
