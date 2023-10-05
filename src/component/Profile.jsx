@@ -7,6 +7,8 @@ import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import IconButton from "@mui/material/IconButton";
 
 function Profile() {
+
+  
   return (
     <>
       <Box display="flex" justifyContent="end" alignItems="center">
@@ -20,7 +22,7 @@ function Profile() {
           src="/images/profile.jpg"
           sx={{ width: "3.2rem", height: "3.2rem", m: "0 1.5rem" }}
         />
-        <IconButton>
+        <IconButton >
           <KeyboardArrowDownIcon fontSize="large" />
         </IconButton>
       </Box>

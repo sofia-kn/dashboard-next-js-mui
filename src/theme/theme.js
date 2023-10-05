@@ -55,6 +55,7 @@ const theme = createTheme({
     gray: {
       main: "#87888C",
       light: "#A0A0A0",
+      dark:'#6B7280'
     },
     black: {
       main: "#171821",
@@ -95,6 +96,11 @@ const theme = createTheme({
       fontWeight: "700",
       lineHeight: "2.4rem",
     },
+    profile:{
+      fontSize:'2rem',
+      fontWeight:'600',
+      lineHeight: "1.75rem",
+    }
   },
 });
 

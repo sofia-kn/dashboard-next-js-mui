@@ -10,6 +10,7 @@ import Customer from "../src/component/Customer";
 import Earnings from "../src/component/Earnings";
 import Insights from "../src/component/Insights";
 import Profile from "../src/component/Profile";
+import UserProfileBox from "../src/component/UserProfileBox";
 
 export async function getStaticProps() {
   return {
@@ -30,6 +31,9 @@ export default function Home({ salesCard }) {
           >
             <Grid item sm={12} textAlign="end" height="5rem" mt="1.5rem">
               <Profile />
+            </Grid>
+            <Grid item sm={12}>
+              <UserProfileBox/>
             </Grid>
             <Grid item sm={12} md={7.8}>
               <Paper
