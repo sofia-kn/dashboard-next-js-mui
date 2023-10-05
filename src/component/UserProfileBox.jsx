@@ -10,8 +10,8 @@ import {
   Divider,
 } from "@mui/material";
 import CancelOutlinedIcon from "@mui/icons-material/CancelOutlined";
-import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
-import { Button } from "@mui/base";
+import { userProfile } from "../data/data";
+import Button from "@mui/material/Button";
 
 function UserProfileBox() {
   return (
@@ -19,8 +19,9 @@ function UserProfileBox() {
       sx={{
         width: "100%",
         maxWidth: 380,
-        height: "45rem",
+        // height: "60rem",
         p: "3rem",
+        zIndex:1
       }}
     >
       <List sx={{ p: "0" }}>
@@ -50,20 +51,50 @@ function UserProfileBox() {
           </Box>
         </ListItem>
         <Divider />
-        <ListItem sx={{ p: "0", m: "2rem 0" }}>
-          <Box width={40} height={40} bgcolor='warning.main'>
-            <AttachMoneyIcon color="primary" fontSize="large"/>
-          </Box>
-          <Box ml={4}>
-            <Typography variant="profile">Michael Roberts</Typography>
-            <Typography variant="subtitle2" color="gray.main" m="0.5rem 0">
-              Administrator
-            </Typography>
-            <Typography variant="subtitle2" color="gray.dark" fontWeight="600">
-              info@shop.com
-            </Typography>
-          </Box>
-        </ListItem>
+        {userProfile.map((item) => (
+          <>
+            <ListItem
+              sx={{
+                p: "0",
+                m: "2rem 0",
+              }}
+            >
+              <Box
+                width={40}
+                height={40}
+                bgcolor={item.bgColor}
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+                borderRadius="1rem"
+              >
+                {item.icon}
+              </Box>
+              <Box ml={3}>
+                <Typography variant="h2">{item.title}</Typography>
+                <Typography variant="subtitle2" color="gray.main">
+                  {item.description}
+                </Typography>
+              </Box>
+            </ListItem>
+            <Divider />
+          </>
+        ))}
+        <Button
+          sx={{
+            width: "100%",
+            p: "1.2rem",
+            height: "4.8rem",
+            borderRadius: "1rem",
+            mt:'2rem'
+          }}
+          variant="contained"
+          color="Purple"
+        >
+          <Typography color="white.main">Logout</Typography>
+        </Button>
       </List>
     </Paper>
   );

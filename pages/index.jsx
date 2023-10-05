@@ -23,19 +23,17 @@ export default function Home({ salesCard }) {
       <Box display="flex">
         <Menu />
         <Container maxWidth="lg">
+          <Grid item sm={12} textAlign="end" height="5rem" mt="1.5rem">
+            <Profile />
+          </Grid>
+          
           <Grid
             container
             spacing={2}
             justifyContent="center"
             alignItems="center"
           >
-            <Grid item sm={12} textAlign="end" height="5rem" mt="1.5rem">
-              <Profile />
-            </Grid>
-            <Grid item sm={12}>
-              <UserProfileBox/>
-            </Grid>
-            <Grid item sm={12} md={7.8}>
+            <Grid item sm={12} md={8}>
               <Paper
                 sx={{
                   p: "2rem 1.4rem",
@@ -77,7 +75,7 @@ export default function Home({ salesCard }) {
                 <Level />
               </Paper>
             </Grid>
-            <Grid item xs={12} sm={12} md={7.8}>
+            <Grid item xs={12} sm={12} md={8}>
               <Paper
                 sx={{
                   p: "1rem 0 0 1rem",
@@ -119,7 +117,7 @@ export default function Home({ salesCard }) {
                 <Earnings />
               </Paper>
             </Grid>
-            <Grid item xs={12} sm={12} md={7.8}>
+            <Grid item xs={12} sm={12} md={8}>
               <Paper
                 sx={{
                   p: "2rem",

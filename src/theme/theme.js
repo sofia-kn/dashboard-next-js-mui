@@ -63,6 +63,9 @@ const theme = createTheme({
     red: {
       main: "#FC003C",
     },
+    Purple:{
+      main:'#7352FF'
+    }
   },
   typography: {
     // fontFamily: "SemiBold",
