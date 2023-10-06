@@ -29,7 +29,7 @@ function UserProfileBox({ setshowUserProfile, showUserProfile }) {
         <ListItem
           sx={{ display: "flex", justifyContent: "space-between", p: "0" }}
         >
-          <Typography fontSize="1.8rem" fontWeight="500" color="#000">
+          <Typography fontSize="1.8rem" fontWeight="500">
             User Profile
           </Typography>
           <IconButton onClick={() => setshowUserProfile(false)}>
