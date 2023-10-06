@@ -9,36 +9,45 @@ import UserProfileBox from "./UserProfileBox";
 import NotificationBox from "./NotificationBox";
 
 function Profile() {
-const[showUserProfile, setshowUserProfile] = useState(false)
-const[showNotification, setShowNotification] = useState(false)
-  
+  const [showUserProfile, setshowUserProfile] = useState(false);
+  const [showNotification, setShowNotification] = useState(false);
+
   return (
     <Box>
       <Box display="flex" justifyContent="end" alignItems="center">
-        <IconButton onClick={()=> setShowNotification(true)}>
+        <IconButton onClick={() => setShowNotification(true)}>
           <Badge color="red" overlap="circular" badgeContent="" variant="dot">
-            <NotificationsNoneIcon fontSize="large"/>
+            <NotificationsNoneIcon fontSize="large" />
           </Badge>
         </IconButton>
-        
+
         <Avatar
           alt="Remy Sharp"
           src="/images/profile.jpg"
-          sx={{ width: "3.2rem", height: "3.2rem", m: "0 1.5rem" }}
+          sx={{
+            width: "3.2rem",
+            height: "3.2rem",
+            m: "0 1.5rem",
+            cursor: "pointer",
+          }}
         />
-        <Box>
-        </Box>
-        <IconButton onClick={()=> setshowUserProfile(true)}>
+
+        <IconButton onClick={() => setshowUserProfile(true)}>
           <KeyboardArrowDownIcon fontSize="large" />
         </IconButton>
-          
       </Box>
-          <Box display='flex' justifyContent="flex-end" mt='1rem' >
-            <UserProfileBox setshowUserProfile={setshowUserProfile} showUserProfile={showUserProfile}/>
-          </Box>
-          <Box display='flex' justifyContent="flex-end">
-            <NotificationBox setShowNotification={setShowNotification} showNotification={showNotification}/>
-          </Box>
+      <Box display="flex" justifyContent="flex-end" mt="1rem">
+        <UserProfileBox
+          setshowUserProfile={setshowUserProfile}
+          showUserProfile={showUserProfile}
+        />
+      </Box>
+      <Box display="flex" justifyContent="flex-end">
+        <NotificationBox
+          setShowNotification={setShowNotification}
+          showNotification={showNotification}
+        />
+      </Box>
     </Box>
   );
 }

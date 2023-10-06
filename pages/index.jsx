@@ -9,8 +9,7 @@ import { Container, Grid, Paper } from "@mui/material";
 import Customer from "../src/component/Customer";
 import Earnings from "../src/component/Earnings";
 import Insights from "../src/component/Insights";
-import Profile from "../src/component/Profile";
-import UserProfileBox from "../src/component/UserProfileBox";
+import Navbar from "../src/component/Navbar";
 
 export async function getStaticProps() {
   return {
@@ -24,7 +23,7 @@ export default function Home({ salesCard }) {
         <Menu />
         <Container maxWidth="lg">
           <Grid item sm={12} textAlign="end" height="5rem" mt="1.5rem">
-            <Profile />
+            <Navbar />
           </Grid>
           
           <Grid
