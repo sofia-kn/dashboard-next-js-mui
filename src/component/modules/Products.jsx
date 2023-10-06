@@ -7,10 +7,10 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
-import { products } from "../data/data";
+import { products } from "../../data/data";
 import Box from "@mui/system/Box";
 import CountUp from "react-countup";
-import LinearProgressCountUp from "../component/LinearProgressCountUp";
+import LinearProgressCountUp from "../modules/LinearProgressCountUp";
 
 function Products() {
   return (

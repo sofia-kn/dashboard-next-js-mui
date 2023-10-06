@@ -1,15 +1,15 @@
 import Typography from "@mui/material/Typography";
 import { salesCard } from "../src/data/data";
-import Cardbox from "../src/component/CardBox";
+import Cardbox from "../src/component/modules/CardBox";
 import Box from "@mui/material/Box";
-import Level from "../src/component/Level";
-import Products from "../src/component/Products";
-import Menu from "../src/component/Menu";
+import Level from "../src/component/modules/Level";
+import Products from "../src/component/modules/Products";
+import Menu from "../src/component/modules/Menu";
 import { Container, Grid, Paper } from "@mui/material";
-import Customer from "../src/component/Customer";
-import Earnings from "../src/component/Earnings";
-import Insights from "../src/component/Insights";
-import Navbar from "../src/component/Navbar";
+import Customer from "../src/component/modules/Customer";
+import Earnings from "../src/component/modules/Earnings";
+import Insights from "../src/component/modules/Insights";
+import Navbar from "../src/component/modules/Navbar";
 
 export async function getStaticProps() {
   return {

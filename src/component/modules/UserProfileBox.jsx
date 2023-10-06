@@ -10,10 +10,10 @@ import {
   Divider,
 } from "@mui/material";
 import CancelOutlinedIcon from "@mui/icons-material/CancelOutlined";
-import { notifMessages } from "../data/data";
+import { userProfile } from "../../data/data";
 import Button from "@mui/material/Button";
 
-function NotificationBox({setShowNotification, showNotification}) {
+function UserProfileBox({ setshowUserProfile, showUserProfile }) {
   return (
     <Paper
       sx={{
@@ -22,28 +22,44 @@ function NotificationBox({setShowNotification, showNotification}) {
         // height: "60rem",
         p: "3rem",
         zIndex: 1,
-        display: showNotification == true ? "block" : "none",
-        mr: "11rem",
+        display: showUserProfile == true ? "block" : "none",
       }}
     >
       <List sx={{ p: "0" }}>
         <ListItem
           sx={{ display: "flex", justifyContent: "space-between", p: "0" }}
         >
-          <Typography fontSize="1.8rem" fontWeight="500" >
-            Messages
+          <Typography fontSize="1.8rem" fontWeight="500">
+            User Profile
           </Typography>
-          <IconButton onClick={() => setShowNotification(false)}>
+          <IconButton onClick={() => setshowUserProfile(false)}>
             <CancelOutlinedIcon fontSize="large" />
           </IconButton>
         </ListItem>
-        {notifMessages.map((item) => (
-          <Box key={item.id}>
+        <ListItem sx={{ p: "0", m: "2rem 0" }}>
+          <Avatar
+            src="/images/profile.jpg"
+            sx={{ width: "9.6rem", height: "9.6rem" }}
+          />
+          <Box ml={4}>
+            <Typography variant="profile">Michael Roberts</Typography>
+            <Typography variant="subtitle2" color="gray.main" m="0.5rem 0">
+              Administrator
+            </Typography>
+            <Typography variant="subtitle2" color="gray.dark" fontWeight="600">
+              info@shop.com
+            </Typography>
+          </Box>
+        </ListItem>
+        <Divider />
+        {userProfile.map((item) => (
+          <Box  key={item.id}>
             <ListItem
               sx={{
                 p: "0",
                 m: "2rem 0",
               }}
+             
             >
               <Box
                 width={40}
@@ -56,22 +72,18 @@ function NotificationBox({setShowNotification, showNotification}) {
                 }}
                 borderRadius="1rem"
               >
-                <Avatar src={item.avatar} alt="image" />
+                {item.icon}
               </Box>
               <Box ml={3}>
-                <Typography variant="user">{item.title}</Typography>
-                <Typography variant="subtitle2" color="gray.dark" mt={1.3}>
-                  {item.message}
-                </Typography>
-                <Typography variant="subtitle2" color="gray.dark" mt={0.5}>
-                  {item.time}
+                <Typography variant="h2">{item.title}</Typography>
+                <Typography variant="subtitle2" color="gray.main">
+                  {item.description}
                 </Typography>
               </Box>
             </ListItem>
             <Divider />
           </Box>
         ))}
-
         <Button
           sx={{
             width: "100%",
@@ -83,13 +95,11 @@ function NotificationBox({setShowNotification, showNotification}) {
           variant="contained"
           color="Purple"
         >
-          <Typography color="white.main" textTransform="initial">
-            See all messages
-          </Typography>
+          <Typography color="white.main">Logout</Typography>
         </Button>
       </List>
     </Paper>
   );
 }
 
-export default NotificationBox;
+export default UserProfileBox;

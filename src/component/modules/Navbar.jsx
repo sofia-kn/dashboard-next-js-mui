@@ -15,7 +15,9 @@ function Profile() {
   return (
     <Box>
       <Box display="flex" justifyContent="end" alignItems="center">
-        <IconButton onClick={() => setShowNotification(true)}>
+        <IconButton onClick={() => (setShowNotification(true),
+          setshowUserProfile(false)
+          )}>
           <Badge color="red" overlap="circular" badgeContent="" variant="dot">
             <NotificationsNoneIcon fontSize="large" />
           </Badge>
@@ -32,7 +34,9 @@ function Profile() {
           }}
         />
 
-        <IconButton onClick={() => setshowUserProfile(true)}>
+        <IconButton onClick={() =>( setshowUserProfile(true),
+        setShowNotification(false))
+        }>
           <KeyboardArrowDownIcon fontSize="large" />
         </IconButton>
       </Box>
