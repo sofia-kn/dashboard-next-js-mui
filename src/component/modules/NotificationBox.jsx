@@ -12,6 +12,7 @@ import {
 import CancelOutlinedIcon from "@mui/icons-material/CancelOutlined";
 import { notifMessages } from "../../data/data";
 import Button from "@mui/material/Button";
+import NavbarBtn from "../elements/NavbarBtn";
 
 function NotificationBox({setShowNotification, showNotification}) {
   return (
@@ -72,21 +73,7 @@ function NotificationBox({setShowNotification, showNotification}) {
           </Box>
         ))}
 
-        <Button
-          sx={{
-            width: "100%",
-            p: "1.2rem",
-            height: "4.8rem",
-            borderRadius: "1rem",
-            mt: "2rem",
-          }}
-          variant="contained"
-          color="Purple"
-        >
-          <Typography color="white.main" textTransform="initial">
-            See all messages
-          </Typography>
-        </Button>
+       <NavbarBtn title={'See all messages'}/>
       </List>
     </Paper>
   );

@@ -1,6 +1,6 @@
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
-import ArchiveOutlinedIcon from '@mui/icons-material/ArchiveOutlined';
-import TaskOutlinedIcon from '@mui/icons-material/TaskOutlined';
+import ArchiveOutlinedIcon from "@mui/icons-material/ArchiveOutlined";
+import TaskOutlinedIcon from "@mui/icons-material/TaskOutlined";
 const salesCard = [
   {
     id: "1",
@@ -69,30 +69,59 @@ const userProfile = [
     title: "My Profile",
     description: "Account Settings",
     icon: <AttachMoneyIcon color="primary" fontSize="large" />,
-    bgColor:"rgb(229, 250, 251)"
+    bgColor: "rgb(229, 250, 251)",
   },
   {
     id: "2",
     title: "My Inbox",
     description: "Messages & Emails",
-    icon: <ArchiveOutlinedIcon color="success" fontSize="large"/>,
-    bgColor:"rgb(235, 250, 242)",
-
+    icon: <ArchiveOutlinedIcon color="success" fontSize="large" />,
+    bgColor: "rgb(235, 250, 242)",
   },
   {
     id: "3",
     title: "My Tasks",
     description: "To-do and Daily Tasks",
-    icon: <TaskOutlinedIcon color="white" fontSize="large"/>,
-    bgColor:"rgb(254, 201, 15)"
+    icon: <TaskOutlinedIcon color="white" fontSize="large" />,
+    bgColor: "rgb(254, 201, 15)",
   },
 ];
 
-const notifMessages =[
-  {id:'1', avatar:'/images/user1.jpg', title:'Roman Joined the Team!', message:'Congratulate him', time:'9:08 AM'},
-  {id:'2', avatar:'/images/user2.png', title:'New message received', message:'Salma sent you new message', time:'11:56 AM'},
-  {id:'3', avatar:'/images/user3.jpg', title:'New Payment received', message:'Check your earnings', time:'4:39 AM'},
-  {id:'4', avatar:'/images/profile.jpg', title:'Jolly completed tasks', message:'Assign her new tasks', time:'1:12 AM'}
-]
+const notifMessages = [
+  {
+    id: "1",
+    avatar: "/images/user1.jpg",
+    title: "Roman Joined the Team!",
+    message: "Congratulate him",
+    time: "9:08 AM",
+  },
+  {
+    id: "2",
+    avatar: "/images/user2.png",
+    title: "New message received",
+    message: "Salma sent you new message",
+    time: "11:56 AM",
+  },
+  {
+    id: "3",
+    avatar: "/images/user3.jpg",
+    title: "New Payment received",
+    message: "Check your earnings",
+    time: "4:39 AM",
+  },
+  {
+    id: "4",
+    avatar: "/images/profile.jpg",
+    title: "Jolly completed tasks",
+    message: "Assign her new tasks",
+    time: "1:12 AM",
+  },
+];
 
-export { salesCard, products, userProfile, notifMessages };
+export { 
+  salesCard,
+  products,
+  userProfile, 
+  notifMessages,
+  
+};

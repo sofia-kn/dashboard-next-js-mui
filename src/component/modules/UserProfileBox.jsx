@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 import CancelOutlinedIcon from "@mui/icons-material/CancelOutlined";
 import { userProfile } from "../../data/data";
-import Button from "@mui/material/Button";
+import NavbarBtn from "../elements/NavbarBtn";
 
 function UserProfileBox({ setshowUserProfile, showUserProfile }) {
   return (
@@ -84,19 +84,7 @@ function UserProfileBox({ setshowUserProfile, showUserProfile }) {
             <Divider />
           </Box>
         ))}
-        <Button
-          sx={{
-            width: "100%",
-            p: "1.2rem",
-            height: "4.8rem",
-            borderRadius: "1rem",
-            mt: "2rem",
-          }}
-          variant="contained"
-          color="Purple"
-        >
-          <Typography color="white.main">Logout</Typography>
-        </Button>
+     <NavbarBtn title={'Logout'}/>
       </List>
     </Paper>
   );
