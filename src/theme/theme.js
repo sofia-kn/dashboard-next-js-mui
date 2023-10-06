@@ -103,6 +103,12 @@ const theme = createTheme({
       fontSize:'2rem',
       fontWeight:'600',
       lineHeight: "1.75rem",
+    },
+    User:{
+      fontSize:'1.6rem',
+      fontWeight:'600',
+      lineHeight: "1.8rem",
+
     }
   },
 });
